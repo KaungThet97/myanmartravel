@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+
+    margin:0;
+    overflow: hidden;
+}
+
+.slider{
+    overflow: hidden;
+  
+}
+
+.slider figure{
+    width:500%;
+    
+    margin:0 ;
+
+    position: relative;
+
+    animation: myani 20s infinite;
+
+    z-index: -100;
+}
+
+
+.slider figure img{
+    width: 20%;
+    float: left;
+}
+
+
+@keyframes myani{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    40%{
+        left:-100%;
+    }
+    60%{
+        left: -200%;
+    }
+    80%{
+        left: -300%;
+
+    }
+
+    100%{
+        left: -400%;
+    }
+}
+
+.container{
+    width: 500px;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    border-left: 1px solid rgba(255,255,255,0.4);
+    border-top: 1px solid rgba(255,255,255,0.4) ;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+
+     overflow: hidden; 
+}
+
+.container::before{
+    content:"MYn";
+    width: 150px;
+    line-height: 30px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.4);
+    color: #eee;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.4);
+    transform: rotate(45deg);
+    opacity: 0.4;
+
+    position: absolute;
+    top: 17px;
+    right: -40px;
+
+}
+
+.container h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.form{
+    padding: 30px 40px;
+    font-size: 20px;
+}
+
+.form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group .form-control{
+    width: 100%;
+    font-size: 20px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.4);
+    /* border-bottom: 1px solid #eee; */
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.form-group .form-control:focus{
+    outline: none;
+}
+
+.form-control::placeholder{
+    color: white;
+}
+.btn{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+
+}
+
+.btn:focus{
+    outline: none;
+}
+
+#checkbox{
+    margin: 0;
+}
+
+.forget{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgba(0,0,0,0.9);
+}
+
+.register{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    color: rgba(0,0,0,0.9);
+    display: block;
+}
+.btn{
+    margin-top: 20px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.btn a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.form-group label{
+    font-size: 30px;
+    color: rgba(0,0,0,0.9);
+    font-weight: bold;
+}
